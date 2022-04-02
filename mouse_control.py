@@ -10,6 +10,7 @@ def move_mouse(x, y):
     x = coef_x * screenWidth
     y = coef_y * screenHeight
 
+# (0.5, 0.5) центр экрана (определить пределы |0..100|)
     try:
         pyautogui.moveTo(x, y)
     except pyautogui.FailSafeException:
